@@ -54,14 +54,14 @@ c0_run_detached_nodetest1() {
   then
     echo; echo
     echo "curl succeed! If on your localhost, "
-    echo "  try in your browser, http://localhost:8888"
-    echo "  or similarly with your server's IP number or name"
+    echo "try in your browser, http://localhost:8888"
+    echo "or similarly with your server's IP number or name"
   else 
     echo; echo
     echo "curl failed!"
   fi
-  echo "if you interrupt this script, check: docker ps -a"
-  echo "  and if necessary, to cleanup: docker rm -f nodetest1"
+  echo "If you interrupt this script, check: docker ps -a"
+  echo "and if necessary, to cleanup: docker rm -f nodetest1"
 }
 
 c0_attach_nodetest1() {
@@ -73,7 +73,7 @@ c0_attach_nodetest1() {
 
 c0_exec_nodetest1_bash() {
   echo "exec bash - press enter to see shell, ctrl-pq to detach,"
-  echo "  or type exit to stop the container"
+  echo "or type exit to stop the container"
   docker exec nodetest1 /bin/bash
   echo
   docker ps -a
