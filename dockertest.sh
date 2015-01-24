@@ -93,6 +93,8 @@ c0_default() {
   c0_run_detached_nodetest1
   #c0_attach_nodetest1
   #c0_exec_nodetest1_bash
+  echo "press any key to continue, to remove container"
+  read any
   c0_rm_nodetest1
 }
 
