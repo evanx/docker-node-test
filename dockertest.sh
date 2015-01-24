@@ -53,8 +53,9 @@ c0_run_detached_nodetest1() {
   if curl -s 'http://localhost:8888' 
   then
     echo; echo
-    echo "curl succeed! if on your locahost, "
-    echo "  try in your browser: http://localhost:8888"
+    echo "curl succeed! If on your localhost, "
+    echo "  try in your browser, http://localhost:8888"
+    echo "  or similarly with your server's IP number or name"
   else 
     echo; echo
     echo "curl failed!"
