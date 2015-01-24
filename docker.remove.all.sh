@@ -1,3 +1,5 @@
+#!/bin/bash
+
 c0_rm_all() {
   for name in `docker ps -a | grep -v ^CONTAINER | cut -f1 -d' '`
   do 
