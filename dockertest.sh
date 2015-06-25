@@ -1,6 +1,10 @@
 #!/bin/bash 
 
-which docker || exit 1
+if ! which docker 
+then 
+  echo "docker not installed, so aborting"
+  exit 1
+fi
 
 netstat -ntlp  2>/dev/null | grep -qv 8888 || exit 1
 
